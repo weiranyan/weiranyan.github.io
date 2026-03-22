@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeiRan Yan | Academic Homepage</title>
+  <meta name="description" content="Academic homepage of WeiRan Yan, Independent Researcher in Large Language Models, AIOps, LLM4Ops, and Site Reliability Engineering." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1b1f23;
+      --muted: #5f6b7a;
+      --line: #d9dee5;
+      --soft: #f5f7fa;
+      --accent: #1f4e79;
+      --max-width: 980px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .site-title {
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: 0.2px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .hero {
+      padding: 40px 0 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      align-items: start;
+    }
+
+        h1 {
+      margin: 0 0 6px;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+
+    .affiliation {
+      font-size: 1.08rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .contact-line {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.96rem;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .contact-line span {
+      margin-right: 14px;
+      white-space: nowrap;
+    }
+
+    .intro {
+      margin: 0;
+      max-width: 760px;
+    }
+
+    main {
+      padding: 26px 0 50px;
+    }
+
+    section {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.45rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 8px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .subheading {
+      margin: 0 0 10px;
+      font-weight: 700;
+      font-size: 1.04rem;
+    }
+
+    .pub-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .pub {
+      padding-bottom: 16px;
+      border-bottom: 1px solid #edf1f5;
+    }
+
+    .pub:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .pub-title {
+      font-weight: 700;
+      font-size: 1.02rem;
+      margin-bottom: 4px;
+    }
+
+    .pub-meta,
+    .pub-note,
+    .small {
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.94rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 20px 0 40px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 760px) {
+      .hero-grid,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="site-title">WeiRan Yan</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#interests">Research Interests</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="container hero-grid">
+        <h1>WeiRan Yan</h1>
+        <div class="affiliation">Independent Researcher</div>
+        <p class="intro">
+          I am an independent researcher based in the San Francisco Bay Area, with 5 years of professional experience in Site Reliability Engineering (SRE), with a primary focus on reliability engineering, high availability, and infrastructure resilience in large-scale online financial systems.
+          My recent research focuses on intelligent systems built with large language models, including long-term
+          conversational question answering, tool-augmented memory retrieval, agentic fallback, parameter-efficient
+          small models, AIOps, and LLM4Ops. I am particularly interested in applying LLMs and agent-based methods to
+          reliability engineering, operational troubleshooting, and root cause analysis in complex production systems.
+          My earlier work includes audio-based prediction and bioacoustic machine learning.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        My work lies at the intersection of large language models, intelligent agents, and production operations.
+        I am interested in building reliable AI systems that combine retrieval, memory, reasoning, and domain knowledge
+        to support complex analytical tasks.
+      </p>
+      <p>
+        Building on practical experience in reliability engineering for large-scale online financial systems and my current work and life in the San Francisco Bay Area, I am especially interested in the application of LLMs to operational intelligence, incident investigation, troubleshooting workflows, and evidence-based root cause analysis for distributed systems.
+      </p>
+    </section>
+
+    <section id="interests">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Large Language Models</li>
+        <li>Retrieval-Augmented Generation</li>
+        <li>Agent Systems</li>
+        <li>Long-Term Memory Retrieval</li>
+        <li>Conversational Question Answering</li>
+        <li>AIOps and LLM4Ops</li>
+        <li>Site Reliability Engineering</li>
+        <li>Root Cause Analysis</li>
+        <li>Machine Learning</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="two-col">
+        <div>
+          <div class="subheading">Professional Background</div>
+          <p>
+            I have 5 years of industry experience in Site Reliability Engineering, with a primary focus on reliability engineering, high availability, and infrastructure resilience for large-scale online financial systems. My professional practice has involved production reliability, distributed systems, operational troubleshooting, and service support in complex, high-demand environments.
+          </p>
+        </div>
+        <div>
+          <div class="subheading">Current Directions</div>
+          <p>
+            My current research explores LLM-centered systems for memory, retrieval, reasoning, and operations,
+            especially in AIOps, LLM4Ops, troubleshooting, and diagnostic workflows for complex environments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <div class="pub-list">
+        <article class="pub">
+          <div class="pub-title">TA-Mem: Tool-Augmented Autonomous Memory Retrieval for LLM in Long-Term Conversational QA</div>
+          <div class="pub-meta">M Yuan, J Liu, J Yang, X Li, <strong>W Yan</strong>, Y Wu, P Liang</div>
+          <div class="pub-note">arXiv preprint arXiv:2603.09297, 2026</div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-title">Tiny-Critic RAG: Empowering Agentic Fallback with Parameter-Efficient Small Language Models</div>
+          <div class="pub-meta">Y Wu, P Liang, Y Xiang, M Yuan, J Liu, J Yang, X Li, <strong>W Yan</strong></div>
+          <div class="pub-note">arXiv preprint arXiv:2603.00846, 2026</div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-title">Automatically Predicting Giant Panda Mating Success Based on Acoustic Features</div>
+          <div class="pub-meta"><strong>W Yan</strong>, M Tang, Z Chen, P Chen, Q Zhao, P Que, K Wu, R Hou, Z Zhang</div>
+          <div class="pub-note">Global Ecology and Conservation 24, e01301, 2020</div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-title">Audio-based Automatic Mating Success Prediction of Giant Pandas</div>
+          <div class="pub-meta"><strong>W R Yan</strong>, M L Tang, Q Zhao, P Chen, D Qi, R Hou, Z Zhang</div>
+          <div class="pub-note">arXiv preprint arXiv:1912.11333, 2019</div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-title">Multi-Scale Residual CRNN with Data Augmentation for DCASE 2020 Task 4</div>
+          <div class="pub-meta">M Tang, L Guo, Y Zhang, <strong>W Yan</strong>, Q Zhao</div>
+          <div class="pub-note">Conference paper, 2020</div>
+        </article>
+      </div>
+      <p class="small" style="margin-top: 14px;">A complete list of publications can also be found on my Google Scholar profile.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><span><a href="mailto:yanwr2016@gmail.com">yanwr2016@gmail.com</a></span></p>
+      <p><span><a href="https://scholar.google.com/citations?user=0NdfCJsAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar</a></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 WeiRan Yan</div>
+  </footer>
+</body>
+</html>
